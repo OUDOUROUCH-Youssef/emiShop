@@ -1,0 +1,10 @@
+<div class="card my-2 p-3 shadow-lg" (click)="showDetails(item.id)">
+    
+    <img src="{{item.thumbnail}}"/>
+    <h6>{{item.title}}</h6>
+    <div class="d-flex">
+       <h6 class="mx-4"> {{item.price}} </h6>
+       <h6 class="mx-4">- {{item.discountPercentage}}%</h6>
+    </div>
+
+</div>

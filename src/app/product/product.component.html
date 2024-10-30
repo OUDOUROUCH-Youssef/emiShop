@@ -1,0 +1,8 @@
+<div class="p-2">
+    <input type="text" [(ngModel)]="searchTerm" (input)="search(searchTerm)" placeholder="search for a product" class="p-2 mx-30"/>
+    <div class="row">
+     <div *ngFor="let product of showedProduct" class="col-3">
+        <app-product-item [item]="product" ></app-product-item>
+     </div>
+    </div>
+</div>
